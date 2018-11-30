@@ -4,6 +4,9 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 5rem;
   color: #384047;
   height: 100%;
   padding: 3rem 0;
@@ -41,7 +44,7 @@ const WrapperForm = styled.div`
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
       -webkit-box-shadow 0.15s ease-in-out;
   }
-`
+`;
 const WrapperSubmit = styled.div`
   input {
     background-color: #ff871c;
@@ -70,12 +73,20 @@ const WrapperSubmit = styled.div`
     -ms-user-select: none;
     user-select: none;
   }
-`
+`;
 
 export default class DripEmail extends Component {
   render() {
     return (
       <Wrapper>
+        <h3 data-drip-attribute="headline">
+        React+D3v4 sample chapter and email course
+        </h3>
+        <p data-drip-attribute="description">
+        Leave your email and get a free sample of React+d3.js and a mini
+        email course. They will teach you about the basic architecture of
+        React apps and show you how JSX makes your code better.
+        </p>
         <WrapperForm>
             <form
             action="https://www.getdrip.com/forms/5362865/submissions"
