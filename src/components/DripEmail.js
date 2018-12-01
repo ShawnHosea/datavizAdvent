@@ -27,6 +27,7 @@ const WrapperForm = styled.div`
     font-size: 14px;
     line-height: 1.428571429;
     color: #555;
+    text-transform: uppercase;
     vertical-align: middle;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -47,31 +48,22 @@ const WrapperForm = styled.div`
 `;
 const WrapperSubmit = styled.div`
   input {
-    background-color: #ff871c;
-    line-height: 1.8;
-    -webkit-box-shadow: 0 3px 0 rgb(214, 106, 18);
-    box-shadow: 0 3px 0 rgb(214, 106, 18);
+    background-color: red;
     text-transform: uppercase;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 1rem 0;
     display: inline-block;
     margin-bottom: 0;
-    font-weight: 400;
+    font-weight: 900;
     color: #fff;
     text-align: center;
-    vertical-align: middle;
     cursor: pointer;
     background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 6px 12px;
+    border: none;
     font-size: 14px;
-    line-height: 1.42857143;
-    border-radius: 4px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  }
+  input:hover {
+    background-color: gold;
   }
 `;
 
