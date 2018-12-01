@@ -7,7 +7,7 @@ module.exports = {
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
-    `gatsby-mdx`,
+    
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -66,5 +66,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-mdx`,
   ],
 }

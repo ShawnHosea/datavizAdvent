@@ -3,13 +3,12 @@ import styled from 'styled-components'
 
 
 const Wrapper = styled.div`
+max-width: 800px;
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 5rem;
+  margin: 3rem auto;
+  padding: 0 2rem;
   color: #384047;
-  height: 100%;
-  padding: 3rem 0;
+  
   
   @media (max-width: 940px) {
     
