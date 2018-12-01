@@ -12,6 +12,10 @@ height: 100%;
 .content {
   margin: 0 auto;
   text-align: center;
+  display: grid;
+  align-items: center;
+justify-items: center;
+  grid-template-columns: 1fr 1fr;
 }
 .Title {
   text-align: center;

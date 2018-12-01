@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from "gatsby"
 
 import Card from './Card';
-import Planes from '../assets/Planes30.png'
+import Rectangle from '../assets/Rectangle.png'
 
 const Wrapper = styled.div`
 display: grid;
@@ -59,85 +59,85 @@ export default class CardList extends Component {
       <Card
           title={<Link
           to="/hello-world/">Day 1</Link>}
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title={<Link
           to="/hi-folks/">Day 2</Link>}
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title={<Link
           to="/my-second-post/">Day 3</Link>}
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
       <Card
           title='Day1'
-          image={Planes}
+          image={Rectangle}
       />
         
       </Wrapper>
