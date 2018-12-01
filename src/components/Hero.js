@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Advent from '../assets/Advent.png'
 import Particles from 'react-particles-js';
 
-import Layout from '../components/Layout'
 
 
 const Wrapper = styled.div`
@@ -163,15 +162,13 @@ const particlesOptions = {
 export default class Hero extends Component {
   render() {
     return (
-      <Layout>
         <Wrapper className="toplayer">
           <div className='content'>
             <h1 className='Title'>DATAVIS ADVENT CALENDAR</h1>
             <img src={Advent} alt='tree'/>
           </div>
           <Particles className="particles" params={particlesOptions} />
-          </Wrapper>
-      </Layout>
+        </Wrapper>
     )
   }
 }
