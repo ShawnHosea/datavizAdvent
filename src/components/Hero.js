@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Advent from '../assets/advent.png'
+import Advent from '../assets/Advent.png'
 import Particles from 'react-particles-js';
 
 
