@@ -22,6 +22,7 @@ const Wrapper = styled.div`
   }
   h1 {
       color: #fff;
+      text-align: center;
   }
 `
 

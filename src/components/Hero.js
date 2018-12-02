@@ -14,8 +14,11 @@ height: 100%;
   text-align: center;
   display: grid;
   align-items: center;
-justify-items: center;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
+  @media (max-width: 940px) {
+    grid-template-columns: 1fr;
+  }
 }
 .Title {
   text-align: center;
