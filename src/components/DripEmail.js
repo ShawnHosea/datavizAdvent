@@ -41,12 +41,11 @@ const WrapperForm = styled.div`
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
       -webkit-box-shadow 0.15s ease-in-out;
   }
-`
-const WrapperSubmit = styled.div`
-  input {
+  input[type='submit'] {
     background-color: red;
     text-transform: uppercase;
     padding: 1rem;
+    padding-bottom: 2rem;
     margin: 1rem 0;
     display: inline-block;
     margin-bottom: 0;
@@ -57,8 +56,9 @@ const WrapperSubmit = styled.div`
     background-image: none;
     border: none;
     font-size: 14px;
+    width: 200px;
   }
-  input:hover {
+  input[type='submit']:hover {
     background-color: gold;
   }
 `
@@ -94,16 +94,6 @@ export default class DripEmail extends Component {
               name="fields[email]"
               className="form-control"
             />
-          </form>
-        </WrapperForm>
-
-        <WrapperSubmit>
-          <form
-            action="https://www.getdrip.com/forms/468020372/submissions"
-            method="post"
-            target="_blank"
-            data-drip-embedded-form="468020372"
-          >
             <input
               type="submit"
               name="submit"
@@ -112,7 +102,7 @@ export default class DripEmail extends Component {
               className="btn"
             />
           </form>
-        </WrapperSubmit>
+        </WrapperForm>
       </Wrapper>
     )
   }
