@@ -6,7 +6,7 @@ import Particles from 'react-particles-js'
 const Wrapper = styled.div`
   background-color: #04081f;
   padding: 2rem 0;
-  height: 100%;
+  height: 500px;
   .content {
     margin: 0 auto;
     text-align: center;
@@ -41,7 +41,7 @@ const Wrapper = styled.div`
   }
   .particles {
     position: absolute;
-    height: 100%;
+    height: 565px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -126,8 +126,8 @@ const particlesOptions = {
       bounce: false,
       attract: {
         enable: false,
-        rotateX: 600,
-        rotateY: 1200,
+        rotateX: 565,
+        rotateY: 2000,
       },
     },
   },
@@ -184,7 +184,12 @@ export default class Hero extends Component {
           </div>
           <img src={Advent} alt="tree" />
         </div>
-        {/* <Particles className="particles" params={particlesOptions} /> */}
+        <Particles
+          className="particles"
+          params={particlesOptions}
+          width="100%"
+          height="565px"
+        />
       </Wrapper>
     )
   }
