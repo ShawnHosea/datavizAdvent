@@ -180,7 +180,7 @@ export default class Hero extends Component {
         <div className="content">
           <div>
             <h2 className="SubTitle">ReactViz.Holiday</h2>
-            <h1 className="Title">A new Dataviz every day of the Advent</h1>
+            <h1 className="Title">A new Dataviz every day of the Advent 🎅</h1>
           </div>
           <img src={Advent} alt="tree" />
         </div>
