@@ -71,6 +71,10 @@ const Layout = ({ children }) => (
                 s.parentNode.insertBefore(dc, s);
             })();
             `}</script>
+          <script async defer src="https://cdn.simpleanalytics.io/hello.js" />
+          <noscript>
+            <img src="https://api.simpleanalytics.io/hello.gif" alt="" />
+          </noscript>
 
           <html lang="en" />
         </Helmet>
