@@ -56,15 +56,15 @@ const Wrapper = styled.div`
 export default ({ posts }) => {
   return (
     <Wrapper>
-      {posts.map((post, i) => (
+      {posts.map(({ node }, i) => (
         <Card
           title={
-            <Link to={post.fields.slug}>
-              Day {i + 1}: {post.frontmatter.title}
+            <Link to={node.fields.slug}>
+              Day {i + 1}: {node.frontmatter.title}
             </Link>
           }
           image={Rectangle}
-          postData={post}
+          key={node.id}
         />
       ))}
     </Wrapper>

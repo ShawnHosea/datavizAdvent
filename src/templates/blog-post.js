@@ -1,23 +1,26 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import get from 'lodash/get'
 import Layout from '../components/layout'
-import PostHeader from '../components/blog/PostHeader'
+import PostHeader from '../components/PostHeader'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.mdx
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const { children, data, location, ...props } = this.props,
+      { mdx } = data
+
     return (
-      <Layout location={this.props.location}>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-        <PostHeader postdate={post.frontmatter.date} />
-        <h1>{post.frontmatter.title}</h1>
+      <Layout location={location}>
+        <Helmet
+          title={`${mdx.frontmatter.title} | ${data.site.siteMetadata.title}`}
+        />
+        <PostHeader postdate={mdx.frontmatter.date} />
+        <h1>{mdx.frontmatter.title}</h1>
+
         <div>
           <MDXRenderer scope={this.props.__mdxScope}>
-            {post.code.body}
+            {mdx.code.body}
           </MDXRenderer>
         </div>
       </Layout>
@@ -32,7 +35,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
@@ -43,6 +45,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        videoId
+        codesandboxId
       }
     }
   }

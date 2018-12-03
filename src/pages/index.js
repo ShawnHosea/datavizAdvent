@@ -5,11 +5,12 @@ import CardList from '../components/CardList'
 import DripEmail from '../components/DripEmail'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { graphql } from 'gatsby'
 
 export default class index extends Component {
   render() {
-    console.log('STUFF')
-    console.log(this.props.data)
+    const { data } = this.props
+
     return (
       <Layout>
         <Header />
@@ -27,6 +28,7 @@ export const query = graphql`
     allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
       edges {
         node {
+          id
           code {
             scope
           }
