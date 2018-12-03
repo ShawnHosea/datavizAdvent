@@ -6,6 +6,7 @@ import PostHeader from '../components/PostHeader'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import ReactPlayer from 'react-player'
 import styled from 'styled-components'
+import Footer from '../components/Footer'
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -53,6 +54,7 @@ class BlogPostTemplate extends React.Component {
               {mdx.code.body}
             </MDXRenderer>
           </div>
+          <Footer />
         </Wrapper>
       </Layout>
     )
