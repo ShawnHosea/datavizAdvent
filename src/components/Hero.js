@@ -184,7 +184,7 @@ export default class Hero extends Component {
           </div>
           <img src={Advent} alt="tree" />
         </div>
-        <Particles className="particles" params={particlesOptions} />
+        {/* <Particles className="particles" params={particlesOptions} /> */}
       </Wrapper>
     )
   }
