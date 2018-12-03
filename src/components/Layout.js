@@ -31,7 +31,10 @@ const Layout = ({ children }) => (
             itemprop="description"
             content="A new dataviz every day of the Advent. 🎅"
           />
-          <meta itemprop="image" content="" />
+          <meta
+            itemprop="image"
+            content="https://reactviz.holiday/reactvizholiday.png"
+          />
 
           <meta property="og:url" content="https://reactviz.holiday" />
           <meta property="og:type" content="website" />
@@ -40,7 +43,10 @@ const Layout = ({ children }) => (
             property="og:description"
             content="A new dataviz every day of the Advent. 🎅"
           />
-          <meta property="og:image" content="" />
+          <meta
+            property="og:image"
+            content="https://reactviz.holiday/reactvizholiday.png"
+          />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="ReactViz.Holiday" />
@@ -50,22 +56,21 @@ const Layout = ({ children }) => (
           />
           <meta
             name="twitter:image"
-            content="https://shawnhosea.com/static/siteImage-91eeaf9db418ed2843834b908e6e60d5.png"
+            content="https://reactviz.holiday/reactvizholiday.png"
           />
+          <script type="text/javascript">{`
+            var _dcq = _dcq || [];
+            var _dcs = _dcs || {};
+            _dcs.account = '4947882';
 
-<script type="text/javascript">
-  var _dcq = _dcq || [];
-  var _dcs = _dcs || {};
-  _dcs.account = '4947882';
-
-  (function() {
-    var dc = document.createElement('script');
-    dc.type = 'text/javascript'; dc.async = true;
-    dc.src = '//tag.getdrip.com/4947882.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(dc, s);
-  })();
-</script>
+            (function() {
+                var dc = document.createElement('script');
+                dc.type = 'text/javascript'; dc.async = true;
+                dc.src = '//tag.getdrip.com/4947882.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(dc, s);
+            })();
+            `}</script>
 
           <html lang="en" />
         </Helmet>
